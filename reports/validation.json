@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "source_orders_unique": true,
+    "one_fact_row_per_cohort_order": true,
+    "independent_python_delivery_rules_match_sql": true,
+    "item_counts_reconcile": true,
+    "merchandise_cents_reconcile": true,
+    "freight_cents_reconcile": true,
+    "eligible_partition_reconciles": true,
+    "ineligible_duration_is_null": true,
+    "all_delivery_durations_nonnegative": true,
+    "joint_stage_durations_sum_to_total": true,
+    "review_denominator_bounded": true,
+    "no_customer_or_source_order_ids_in_export": true,
+    "all_purchase_dates_in_cohort": true
+  },
+  "checks_count": 13,
+  "data_grain": "One row per purchase-cohort order",
+  "raw_source_rows": {
+    "orders": 99441,
+    "customers": 99441,
+    "items": 112650,
+    "products": 32951,
+    "sellers": 3095,
+    "reviews": 99224
+  },
+  "cohort_orders": 86288,
+  "fact_sha256": "805362bb84688b2a8661d14a64eb0a4d666cb6558a59d343841ea3195f1c164a",
+  "desktop_validation": "Not performed; source project requires owner Windows refresh"
+}

@@ -1,0 +1,73 @@
+// Source definitions; Desktop execution is confirmed separately.
+
+Cohort Orders =
+COUNTROWS(FactDelivery)
+
+Eligible Deliveries =
+SUM(FactDelivery[eligible_flag])
+
+Delivered Status Orders =
+SUM(FactDelivery[delivered_flag])
+
+Late Deliveries =
+SUM(FactDelivery[late_flag])
+
+On Time Deliveries =
+[Eligible Deliveries] - [Late Deliveries]
+
+On Time Delivery % =
+DIVIDE([On Time Deliveries], [Eligible Deliveries])
+
+Late Delivery % =
+DIVIDE([Late Deliveries], [Eligible Deliveries])
+
+Eligibility Coverage % =
+DIVIDE([Eligible Deliveries], [Cohort Orders])
+
+Median Delivery Days =
+DIVIDE(MEDIAN(FactDelivery[delivery_seconds]), 86400)
+
+P90 Delivery Days =
+IF([Eligible Deliveries] > 0, PERCENTILEX.INC(FILTER(FactDelivery, FactDelivery[eligible_flag] = 1), FactDelivery[delivery_seconds] / 86400.0, 0.9))
+
+Mean Processing Days =
+DIVIDE(AVERAGE(FactDelivery[processing_seconds]), 86400)
+
+Mean Post Handover Days =
+DIVIDE(AVERAGE(FactDelivery[post_handover_seconds]), 86400)
+
+Complete Stage Orders =
+SUM(FactDelivery[stage_valid_flag])
+
+Stage Coverage % =
+DIVIDE([Complete Stage Orders], [Eligible Deliveries])
+
+Severe Late Deliveries =
+SUM(FactDelivery[severe_late_flag])
+
+Reviewed Eligible Orders =
+SUM(FactDelivery[reviewed_eligible_flag])
+
+Low Score Orders =
+SUM(FactDelivery[poor_review_flag])
+
+Low Score % =
+DIVIDE([Low Score Orders], [Reviewed Eligible Orders])
+
+Review Coverage % =
+DIVIDE([Reviewed Eligible Orders], [Eligible Deliveries])
+
+Noneligible Orders =
+[Cohort Orders] - [Eligible Deliveries]
+
+Previous Month OTD % =
+CALCULATE([On Time Delivery %], DATEADD(DimDate[date], -1, MONTH))
+
+OTD Change pp =
+IF(NOT ISBLANK([Previous Month OTD %]), 100 * ([On Time Delivery %] - [Previous Month OTD %]))
+
+Top Eight State Late Orders =
+IF(SELECTEDVALUE(DimState[late_volume_rank], 999) <= 8, [Late Deliveries])
+
+Comparable Category Late % =
+IF([Eligible Deliveries] >= 100, [Late Delivery %])

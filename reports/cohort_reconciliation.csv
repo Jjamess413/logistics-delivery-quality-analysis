@@ -1,0 +1,10 @@
+order_status,eligibility_reason,orders
+approved,Recorded non-delivered status,2
+canceled,Recorded non-delivered status,455
+created,Recorded non-delivered status,5
+delivered,Eligible delivered order,83696
+delivered,Missing delivery/promise timestamp,5
+invoiced,Recorded non-delivered status,260
+processing,Recorded non-delivered status,298
+shipped,Recorded non-delivered status,990
+unavailable,Recorded non-delivered status,577

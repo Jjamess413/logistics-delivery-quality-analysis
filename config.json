@@ -1,0 +1,13 @@
+{
+  "project": "Logistics Delivery Quality Analysis",
+  "author": "James You",
+  "source_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/olistbr/brazilian-ecommerce",
+  "source_archive_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+  "data_license": "CC BY-NC-SA 4.0",
+  "purchase_start": "2017-01-01",
+  "purchase_end_exclusive": "2018-07-01",
+  "severe_late_days": 7,
+  "comparison_minimum_orders": 100,
+  "on_time_rule": "Delivered calendar date <= estimated delivery calendar date; timestamps remain in the source's unspecified timezone."
+}

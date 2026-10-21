@@ -1,0 +1,147 @@
+QUERY 1
+cohort_orders | eligible_orders | late_orders | on_time_orders | on_time_pct | eligibility_pct
+86288 | 83696 | 5930 | 77766 | 92.91 | 97.0
+
+QUERY 2
+purchase_month | orders | eligible | on_time_pct | previous_month_otd_pct | change_pp
+2017-01 | 800 | 750 | 97.07 | NULL | NULL
+2017-02 | 1780 | 1653 | 97.04 | 97.07 | -0.03
+2017-03 | 2682 | 2546 | 95.44 | 97.04 | -1.59
+2017-04 | 2404 | 2303 | 93.44 | 95.44 | -2.0
+2017-05 | 3700 | 3545 | 97.01 | 93.44 | 3.57
+2017-06 | 3245 | 3135 | 96.97 | 97.01 | -0.04
+2017-07 | 4026 | 3872 | 97.21 | 96.97 | 0.24
+2017-08 | 4331 | 4193 | 97.09 | 97.21 | -0.12
+2017-09 | 4285 | 4150 | 95.61 | 97.09 | -1.48
+2017-10 | 4631 | 4478 | 95.82 | 95.61 | 0.21
+2017-11 | 7544 | 7288 | 87.6 | 95.82 | -8.23
+2017-12 | 5673 | 5513 | 92.54 | 87.6 | 4.95
+2018-01 | 7269 | 7069 | 94.3 | 92.54 | 1.75
+2018-02 | 6728 | 6555 | 85.87 | 94.3 | -8.43
+2018-03 | 7211 | 7003 | 81.04 | 85.87 | -4.84
+2018-04 | 6939 | 6798 | 95.5 | 81.04 | 14.46
+2018-05 | 6873 | 6749 | 93.44 | 95.5 | -2.06
+2018-06 | 6167 | 6096 | 98.84 | 93.44 | 5.4
+
+QUERY 3
+customer_state | eligible_orders | late_orders | late_pct | over_seven_days_late
+RJ | 10891 | 1436 | 13.19 | 853
+SP | 34523 | 1432 | 4.15 | 498
+MG | 9975 | 499 | 5.0 | 178
+BA | 2849 | 380 | 13.34 | 178
+RS | 4726 | 311 | 6.58 | 157
+SC | 3141 | 281 | 8.95 | 111
+ES | 1767 | 205 | 11.6 | 86
+PR | 4262 | 183 | 4.29 | 67
+CE | 1134 | 175 | 15.43 | 112
+PE | 1368 | 141 | 10.31 | 80
+GO | 1721 | 120 | 6.97 | 54
+MA | 645 | 116 | 17.98 | 60
+DF | 1766 | 106 | 6.0 | 39
+PA | 842 | 103 | 12.23 | 57
+AL | 358 | 81 | 22.63 | 39
+PI | 423 | 64 | 15.13 | 28
+MS | 617 | 56 | 9.08 | 22
+MT | 799 | 53 | 6.63 | 29
+PB | 437 | 50 | 11.44 | 20
+SE | 283 | 49 | 17.31 | 29
+RN | 421 | 44 | 10.45 | 23
+TO | 239 | 24 | 10.04 | 7
+RO | 219 | 7 | 3.2 | 2
+AM | 123 | 4 | 3.25 | 2
+
+QUERY 4
+origin_state | customer_state | orders | eligible_orders | late_orders | late_pct
+SP | RJ | 7450 | 7201 | 1120 | 15.55
+SP | SP | 26365 | 25793 | 1083 | 4.2
+SP | MG | 6626 | 6517 | 381 | 5.85
+SP | BA | 2062 | 1994 | 289 | 14.49
+SP | RS | 3200 | 3153 | 231 | 7.33
+SP | SC | 2097 | 2066 | 218 | 10.55
+SP | ES | 1301 | 1280 | 174 | 13.59
+SP | PR | 2732 | 2690 | 134 | 4.98
+SP | CE | 891 | 856 | 132 | 15.42
+PR | RJ | 849 | 824 | 115 | 13.96
+SP | GO | 1281 | 1246 | 102 | 8.19
+SP | PE | 1007 | 971 | 102 | 10.5
+RJ | SP | 1119 | 1083 | 100 | 9.23
+MG | RJ | 1047 | 1004 | 90 | 8.96
+MG | SP | 2294 | 2246 | 87 | 3.87
+
+QUERY 5
+late_band | complete_stage_orders | mean_purchase_to_handover_days | mean_handover_to_delivery_days | mean_total_days
+1-7 days late | 3191 | 5.43 | 22.0 | 27.43
+On time | 77665 | 3.07 | 8.39 | 11.46
+Over 7 days late | 2737 | 6.62 | 38.5 | 45.11
+
+QUERY 6
+late_band | eligible_orders | reviewed_orders | low_score_orders | low_score_pct | review_coverage_pct
+1-7 days late | 3193 | 3134 | 1593 | 50.83 | 98.15
+Not eligible | 0 | 0 | 0 | NULL | NULL
+On time | 77766 | 77319 | 7315 | 9.46 | 99.43
+Over 7 days late | 2737 | 2659 | 2124 | 79.88 | 97.15
+
+QUERY 7
+order_status | eligibility_reason | orders
+delivered | Eligible delivered order | 83696
+shipped | Recorded non-delivered status | 990
+unavailable | Recorded non-delivered status | 577
+canceled | Recorded non-delivered status | 455
+processing | Recorded non-delivered status | 298
+invoiced | Recorded non-delivered status | 260
+created | Recorded non-delivered status | 5
+delivered | Missing delivery/promise timestamp | 5
+approved | Recorded non-delivered status | 2
+
+QUERY 8
+case_code | purchase_date | customer_state | category | review_priority | late_days | review_score
+ORD-012775 | 2018-06-27 | SP | books_general_interest | Data quality review | NULL | 5.0
+ORD-017372 | 2017-11-28 | SP | auto | Data quality review | NULL | 5.0
+ORD-017549 | 2017-05-25 | RS | sports_leisure | Data quality review | NULL | 5.0
+ORD-066407 | 2018-06-08 | SP | computers_accessories | Data quality review | NULL | 1.0
+ORD-095491 | 2018-06-20 | SP | industry_commerce_and_business | Data quality review | NULL | 5.0
+ORD-010586 | 2018-02-23 | RJ | cool_stuff | Severe delay + poor feedback | 188.0 | 2.0
+ORD-027870 | 2018-01-03 | SP | home_construction | Severe delay + poor feedback | 175.0 | 1.0
+ORD-018518 | 2017-03-13 | SP | furniture_decor | Severe delay + poor feedback | 167.0 | 1.0
+ORD-015575 | 2017-03-08 | SE | musical_instruments | Severe delay + poor feedback | 166.0 | 1.0
+ORD-026388 | 2017-03-07 | PA | consoles_games | Severe delay + poor feedback | 165.0 | 1.0
+ORD-016799 | 2017-02-28 | GO | housewares | Severe delay + poor feedback | 152.0 | 1.0
+ORD-042875 | 2017-11-25 | RJ | garden_tools | Severe delay + poor feedback | 143.0 | 1.0
+ORD-086945 | 2017-04-04 | CE | computers_accessories | Severe delay + poor feedback | 132.0 | 1.0
+ORD-001191 | 2017-04-06 | PE | telephony | Severe delay + poor feedback | 123.0 | 1.0
+ORD-030836 | 2017-04-28 | GO | Unknown category | Severe delay + poor feedback | 112.0 | 2.0
+ORD-009209 | 2017-11-25 | CE | furniture_decor | Severe delay + poor feedback | 110.0 | 1.0
+ORD-069448 | 2017-09-26 | RJ | furniture_decor | Severe delay + poor feedback | 109.0 | 1.0
+ORD-015797 | 2017-05-03 | AM | food | Severe delay + poor feedback | 104.0 | 1.0
+ORD-075625 | 2018-01-12 | RJ | baby | Severe delay + poor feedback | 104.0 | 1.0
+ORD-090193 | 2017-05-25 | MG | garden_tools | Severe delay + poor feedback | 104.0 | 1.0
+
+QUERY 9
+method | joined_rows | distinct_orders
+naive_orders_items_reviews_join | 99237 | 86288
+one_row_per_order_model | 86288 | 86288
+
+QUERY 10
+eligible_orders | calendar_late_orders | literal_timestamp_late_orders | same_day_after_midnight
+83696 | 5930 | 6886 | 956
+
+QUERY 11
+purchase_month | eligible_orders | on_time_pct | mean_promised_calendar_days | mean_actual_elapsed_days
+2017-01 | 750 | 97.0667 | 40.1613 | 12.647
+2017-02 | 1653 | 97.0357 | 32.4955 | 13.1688
+2017-03 | 2546 | 95.4438 | 25.3716 | 12.9512
+2017-04 | 2303 | 93.4433 | 27.9948 | 14.9179
+2017-05 | 3545 | 97.0099 | 24.925 | 11.3224
+2017-06 | 3135 | 96.9697 | 24.6571 | 12.0116
+2017-07 | 3872 | 97.2107 | 23.9597 | 11.5927
+2017-08 | 4193 | 97.0904 | 24.114 | 11.1471
+2017-09 | 4150 | 95.6145 | 23.0708 | 11.851
+2017-10 | 4478 | 95.824 | 23.6565 | 11.8567
+2017-11 | 7288 | 87.596 | 23.1966 | 15.1611
+2017-12 | 5513 | 92.5449 | 28.3142 | 15.3949
+2018-01 | 7069 | 94.2991 | 26.9402 | 14.0806
+2018-02 | 6555 | 85.8734 | 25.1641 | 16.9451
+2018-03 | 7003 | 81.0367 | 22.6653 | 16.3014
+2018-04 | 6798 | 95.4987 | 24.3145 | 11.4992
+2018-05 | 6749 | 93.4361 | 23.5275 | 11.419
+2018-06 | 6096 | 98.8353 | 28.4086 | 9.2392

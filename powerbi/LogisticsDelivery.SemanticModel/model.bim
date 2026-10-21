@@ -1,0 +1,624 @@
+{
+  "name": "LogisticsDelivery",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-GB",
+    "sourceQueryCulture": "en-GB",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "FactDelivery",
+        "lineageTag": "b3e65721-f7cd-5ea6-af68-53d9cc472366",
+        "columns": [
+          {
+            "name": "case_code",
+            "sourceColumn": "case_code",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "f1452f10-637e-51d8-8eb0-c4c656c63db5"
+          },
+          {
+            "name": "purchase_date",
+            "sourceColumn": "purchase_date",
+            "dataType": "dateTime",
+            "summarizeBy": "none",
+            "lineageTag": "d937377c-9c34-55f5-a341-81b5aa9988c4",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "purchase_month",
+            "sourceColumn": "purchase_month",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "fe08308e-79d3-58a7-9c53-f77aa25e5177"
+          },
+          {
+            "name": "customer_state",
+            "sourceColumn": "customer_state",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "940644ff-bae2-5b30-af12-ad1fffa91685"
+          },
+          {
+            "name": "origin_state",
+            "sourceColumn": "origin_state",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "f1eb4566-fb8d-58cb-b75f-62d0c7ca50fa"
+          },
+          {
+            "name": "route_type",
+            "sourceColumn": "route_type",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "fb027d7d-0f6d-5b63-a991-d247462ec077"
+          },
+          {
+            "name": "category",
+            "sourceColumn": "category",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "8f1eda4e-0deb-558d-ab0e-63fa09f5a712"
+          },
+          {
+            "name": "order_status",
+            "sourceColumn": "order_status",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "2a04173c-7cbe-5530-aa40-73843d55e57b"
+          },
+          {
+            "name": "item_count",
+            "sourceColumn": "item_count",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "e5edd2c3-bddd-5c5b-be57-739e7abfe21c",
+            "formatString": "#,0"
+          },
+          {
+            "name": "seller_count",
+            "sourceColumn": "seller_count",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "531417ec-1b33-59e1-879c-269c23c00fa8",
+            "formatString": "#,0"
+          },
+          {
+            "name": "eligible_flag",
+            "sourceColumn": "eligible_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "e5d0ff3b-887d-5a82-bed4-2c67e080baf4",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "delivered_flag",
+            "sourceColumn": "delivered_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "73fea1bc-231d-58d1-bdd1-2d389da3c3f1",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "late_flag",
+            "sourceColumn": "late_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "d757518a-29ed-5489-a49c-791f376973db",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "severe_late_flag",
+            "sourceColumn": "severe_late_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "0ce89ff2-ef39-5fcf-bc90-e3e2cc97d0c2",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "late_days",
+            "sourceColumn": "late_days",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "5f175ed2-c1dd-5ea7-969b-13ae02387532",
+            "formatString": "#,0"
+          },
+          {
+            "name": "delivery_seconds",
+            "sourceColumn": "delivery_seconds",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "f5bf7971-764f-5c21-a0df-9d9622bf10bc",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "processing_seconds",
+            "sourceColumn": "processing_seconds",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "045e5c5e-6fac-57d0-853c-3a168aae6e09",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "post_handover_seconds",
+            "sourceColumn": "post_handover_seconds",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "dc822559-9976-508f-9ba7-15aecbbf51b2",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "stage_valid_flag",
+            "sourceColumn": "stage_valid_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "435c77bf-e6e0-5a41-b821-02453e7a3238",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "review_score",
+            "sourceColumn": "review_score",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "da72a7ed-7b40-5260-8b58-f2cc86c1a805",
+            "formatString": "#,0"
+          },
+          {
+            "name": "valid_review_count",
+            "sourceColumn": "valid_review_count",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "0e91d91d-dc6a-554a-8707-5489f7f16cac",
+            "formatString": "#,0"
+          },
+          {
+            "name": "reviewed_eligible_flag",
+            "sourceColumn": "reviewed_eligible_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "ffa11a22-49c5-5606-a0c4-d473332f2a15",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "poor_review_flag",
+            "sourceColumn": "poor_review_flag",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "6d4979d5-b4f0-5213-a426-13faa6141599",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "late_band",
+            "sourceColumn": "late_band",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "a23a4d27-ba75-54e2-8469-3eabf242182a"
+          },
+          {
+            "name": "review_priority",
+            "sourceColumn": "review_priority",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "f7c5fae2-e0cf-5dba-bff4-33c81c979b61"
+          },
+          {
+            "name": "priority_rank",
+            "sourceColumn": "priority_rank",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "837f930e-e821-5599-995d-05e77eb94a72",
+            "formatString": "#,0"
+          },
+          {
+            "name": "eligibility_reason",
+            "sourceColumn": "eligibility_reason",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "a0d5bdec-e2b4-5155-8c20-3b1d57a648cd"
+          },
+          {
+            "name": "merchandise_cents",
+            "sourceColumn": "merchandise_cents",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "10fc8580-5dd8-5968-9a1d-d998c8819ef0",
+            "formatString": "#,0",
+            "isHidden": true
+          },
+          {
+            "name": "freight_cents",
+            "sourceColumn": "freight_cents",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "3cd10d3e-8985-5edd-98ac-8ebd10b5a36e",
+            "formatString": "#,0",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactDelivery",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = fxLoadCsv(\"fact_delivery.csv\", {{\"case_code\", type text}, {\"purchase_date\", type date}, {\"purchase_month\", type text}, {\"customer_state\", type text}, {\"origin_state\", type text}, {\"route_type\", type text}, {\"category\", type text}, {\"order_status\", type text}, {\"item_count\", Int64.Type}, {\"seller_count\", Int64.Type}, {\"eligible_flag\", Int64.Type}, {\"delivered_flag\", Int64.Type}, {\"late_flag\", Int64.Type}, {\"severe_late_flag\", Int64.Type}, {\"late_days\", Int64.Type}, {\"delivery_seconds\", Int64.Type}, {\"processing_seconds\", Int64.Type}, {\"post_handover_seconds\", Int64.Type}, {\"stage_valid_flag\", Int64.Type}, {\"review_score\", Int64.Type}, {\"valid_review_count\", Int64.Type}, {\"reviewed_eligible_flag\", Int64.Type}, {\"poor_review_flag\", Int64.Type}, {\"late_band\", type text}, {\"review_priority\", type text}, {\"priority_rank\", Int64.Type}, {\"eligibility_reason\", type text}, {\"merchandise_cents\", Int64.Type}, {\"freight_cents\", Int64.Type}})\nin Source\n"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Cohort Orders",
+            "expression": "COUNTROWS(FactDelivery)",
+            "lineageTag": "fff4792e-4b47-5c71-b79a-99a53b0659c3",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Eligible Deliveries",
+            "expression": "SUM(FactDelivery[eligible_flag])",
+            "lineageTag": "bbb76157-76dc-57c4-9178-e3017f71d485",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Delivered Status Orders",
+            "expression": "SUM(FactDelivery[delivered_flag])",
+            "lineageTag": "273a0044-58bb-5b56-8333-47bea7af9e7a",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Late Deliveries",
+            "expression": "SUM(FactDelivery[late_flag])",
+            "lineageTag": "c0ef91e9-6e1c-586f-9fd8-9ce8ef6709bf",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "On Time Deliveries",
+            "expression": "[Eligible Deliveries] - [Late Deliveries]",
+            "lineageTag": "fa81bd32-3894-57f5-ba87-c2899c76d5f9",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "On Time Delivery %",
+            "expression": "DIVIDE([On Time Deliveries], [Eligible Deliveries])",
+            "lineageTag": "6ac49f23-061b-58b8-aa79-eb2837073992",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Late Delivery %",
+            "expression": "DIVIDE([Late Deliveries], [Eligible Deliveries])",
+            "lineageTag": "089a1fe7-23d0-53dc-86d8-e7b0b8f2e193",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Eligibility Coverage %",
+            "expression": "DIVIDE([Eligible Deliveries], [Cohort Orders])",
+            "lineageTag": "caf136d9-9614-5960-9987-43b13dff3271",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Median Delivery Days",
+            "expression": "DIVIDE(MEDIAN(FactDelivery[delivery_seconds]), 86400)",
+            "lineageTag": "63b8004d-d4ba-569d-86c1-ef80e382384e",
+            "formatString": "0.00",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "P90 Delivery Days",
+            "expression": "IF([Eligible Deliveries] > 0, PERCENTILEX.INC(FILTER(FactDelivery, FactDelivery[eligible_flag] = 1), FactDelivery[delivery_seconds] / 86400.0, 0.9))",
+            "lineageTag": "d545fc82-4c30-5293-98d2-ca96c1f94b5e",
+            "formatString": "0.00",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Mean Processing Days",
+            "expression": "DIVIDE(AVERAGE(FactDelivery[processing_seconds]), 86400)",
+            "lineageTag": "0b087b7e-0ec5-58a5-90e7-568123ae41e0",
+            "formatString": "0.00",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Mean Post Handover Days",
+            "expression": "DIVIDE(AVERAGE(FactDelivery[post_handover_seconds]), 86400)",
+            "lineageTag": "49a675b9-9e6a-592c-9915-b91069e1791d",
+            "formatString": "0.00",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Complete Stage Orders",
+            "expression": "SUM(FactDelivery[stage_valid_flag])",
+            "lineageTag": "9403d438-26cf-5ff6-a3f7-314a55869ad3",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Stage Coverage %",
+            "expression": "DIVIDE([Complete Stage Orders], [Eligible Deliveries])",
+            "lineageTag": "47025858-eed2-5b28-a9ab-e7b88dbbb122",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Severe Late Deliveries",
+            "expression": "SUM(FactDelivery[severe_late_flag])",
+            "lineageTag": "b2ba6a23-d1e8-554d-845a-01f9b27b08d9",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Reviewed Eligible Orders",
+            "expression": "SUM(FactDelivery[reviewed_eligible_flag])",
+            "lineageTag": "e50aa60f-a4f4-566d-b9ba-9cb564849d95",
+            "formatString": "#,0",
+            "displayFolder": "Feedback and evidence"
+          },
+          {
+            "name": "Low Score Orders",
+            "expression": "SUM(FactDelivery[poor_review_flag])",
+            "lineageTag": "a5a6c5aa-4dc5-55f1-b4e2-9712ceb4b2c8",
+            "formatString": "#,0",
+            "displayFolder": "Feedback and evidence"
+          },
+          {
+            "name": "Low Score %",
+            "expression": "DIVIDE([Low Score Orders], [Reviewed Eligible Orders])",
+            "lineageTag": "1eca8068-c622-5c1b-9199-7129084f6eb2",
+            "formatString": "0.00%",
+            "displayFolder": "Feedback and evidence"
+          },
+          {
+            "name": "Review Coverage %",
+            "expression": "DIVIDE([Reviewed Eligible Orders], [Eligible Deliveries])",
+            "lineageTag": "0ef9eb55-f4e7-5833-8bd1-ac0ddd8b1f0f",
+            "formatString": "0.00%",
+            "displayFolder": "Feedback and evidence"
+          },
+          {
+            "name": "Noneligible Orders",
+            "expression": "[Cohort Orders] - [Eligible Deliveries]",
+            "lineageTag": "874cf104-5e97-52a2-8bcf-435222c4c954",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Previous Month OTD %",
+            "expression": "CALCULATE([On Time Delivery %], DATEADD(DimDate[date], -1, MONTH))",
+            "lineageTag": "fa1532b7-49d7-5c96-9967-5aed7f8b28d3",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "OTD Change pp",
+            "expression": "IF(NOT ISBLANK([Previous Month OTD %]), 100 * ([On Time Delivery %] - [Previous Month OTD %]))",
+            "lineageTag": "fdda225c-055e-5d07-88d9-a8e2bcf6b421",
+            "formatString": "0.00\" pp\"",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Top Eight State Late Orders",
+            "expression": "IF(SELECTEDVALUE(DimState[late_volume_rank], 999) <= 8, [Late Deliveries])",
+            "lineageTag": "d09794a6-bb8a-5619-ae40-ec58f03c52ca",
+            "formatString": "#,0",
+            "displayFolder": "Delivery service"
+          },
+          {
+            "name": "Comparable Category Late %",
+            "expression": "IF([Eligible Deliveries] >= 100, [Late Delivery %])",
+            "lineageTag": "2ad2dd92-d859-5fe8-b49f-81a23f72d953",
+            "formatString": "0.00%",
+            "displayFolder": "Delivery service"
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "lineageTag": "a26a4d1e-4d57-5ca6-ad17-c10cdff2002e",
+        "columns": [
+          {
+            "name": "date",
+            "sourceColumn": "date",
+            "dataType": "dateTime",
+            "summarizeBy": "none",
+            "lineageTag": "ce10512b-44b7-5ea4-8b82-d9abe4e44f99",
+            "formatString": "yyyy-MM-dd",
+            "isKey": true
+          },
+          {
+            "name": "month",
+            "sourceColumn": "month",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "9c7c5a26-8c0d-50c4-96f2-9f94664ec14d"
+          },
+          {
+            "name": "year",
+            "sourceColumn": "year",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "c668e8f4-35b1-5d4b-a91b-fb6f376c2898",
+            "formatString": "#,0"
+          },
+          {
+            "name": "month_number",
+            "sourceColumn": "month_number",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "6a2dea8b-597c-53b8-ab69-be59235caddf",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = fxLoadCsv(\"dim_date.csv\", {{\"date\", type date}, {\"month\", type text}, {\"year\", Int64.Type}, {\"month_number\", Int64.Type}})\nin Source\n"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "dataCategory": "Time"
+      },
+      {
+        "name": "DimState",
+        "lineageTag": "8e317a31-49f7-5f0a-87ef-489131ddc988",
+        "columns": [
+          {
+            "name": "customer_state",
+            "sourceColumn": "customer_state",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "efa7c818-6d51-51e9-92ce-1dc6ca078245",
+            "isKey": true
+          },
+          {
+            "name": "late_volume_rank",
+            "sourceColumn": "late_volume_rank",
+            "dataType": "int64",
+            "summarizeBy": "none",
+            "lineageTag": "b701f455-c982-554b-b2f3-12415873640c",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimState",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = fxLoadCsv(\"dim_state.csv\", {{\"customer_state\", type text}, {\"late_volume_rank\", Int64.Type}})\nin Source\n"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "DimCategory",
+        "lineageTag": "f8f6cbbf-df7e-5c5a-ae5e-c70c0f2ee508",
+        "columns": [
+          {
+            "name": "category",
+            "sourceColumn": "category",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "4f2dcdd6-3e59-5190-bd03-bd3d52bb63d2",
+            "isKey": true
+          },
+          {
+            "name": "category_label",
+            "sourceColumn": "category_label",
+            "dataType": "string",
+            "summarizeBy": "none",
+            "lineageTag": "f110fa02-368e-5a38-a39b-15e4da2b84bb"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCategory",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = fxLoadCsv(\"dim_category.csv\", {{\"category\", type text}, {\"category_label\", type text}})\nin Source\n"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "3c50ac57-4daa-5706-b2de-82a8a63b5ce4",
+        "fromTable": "FactDelivery",
+        "fromColumn": "purchase_date",
+        "toTable": "DimDate",
+        "toColumn": "date",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "141646e0-8e92-5f0f-976c-ffbb47cdd5e9",
+        "fromTable": "FactDelivery",
+        "fromColumn": "customer_state",
+        "toTable": "DimState",
+        "toColumn": "customer_state",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      },
+      {
+        "name": "f38402d0-e47d-5e2b-b538-a6fb6a57ef01",
+        "fromTable": "FactDelivery",
+        "fromColumn": "category",
+        "toTable": "DimCategory",
+        "toColumn": "category",
+        "fromCardinality": "many",
+        "toCardinality": "one",
+        "crossFilteringBehavior": "oneDirection",
+        "isActive": true
+      }
+    ],
+    "expressions": [
+      {
+        "name": "pDataFolder",
+        "kind": "m",
+        "expression": "\"C:/LogisticsDelivery/data/processed/\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      },
+      {
+        "name": "fxLoadCsv",
+        "kind": "m",
+        "expression": "(FileName as text, ColumnTypes as list) as table =>\nlet\n    Source = Csv.Document(File.Contents(pDataFolder & FileName), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    EmptyToNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),\n    Typed = Table.TransformColumnTypes(EmptyToNull, ColumnTypes, \"en-GB\")\nin Typed\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PortfolioScope",
+        "value": "Public Olist historical order outcomes. No observed damage/loss or carrier attribution."
+      }
+    ]
+  }
+}

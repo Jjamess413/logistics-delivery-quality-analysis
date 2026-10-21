@@ -1,0 +1,13 @@
+{
+  "status": "Pending Windows owner confirmation",
+  "automated_checks": "Public schemas, fields, resources, input CSVs and official CLI conformance",
+  "actual_desktop_execution": false,
+  "actual_native_screenshots": false,
+  "expected_overview": {
+    "eligible_deliveries": 83696,
+    "on_time_pct_rounded": 92.91,
+    "late_deliveries": 5930,
+    "p90_days_rounded": 24.05
+  },
+  "required_next_check": "Open the full package on Windows, refresh, compare controls, inspect all three pages and filter interactions."
+}

@@ -1,0 +1,5 @@
+route_type,orders,delivered_orders,eligible_orders,late_orders,on_time_orders,on_time_pct,late_pct,late_rate_wilson_low_pct,late_rate_wilson_high_pct,eligibility_pct,median_delivery_days,p90_delivery_days,mean_delivery_days,stage_valid_orders,mean_processing_days,mean_post_handover_days,severe_late_orders,reviewed_eligible_orders,poor_review_orders,poor_review_pct,review_coverage_pct
+Cross state,54854,53574,53573,4741,48832,91.150400,8.849600,8.612000,9.093100,97.664700,13.327300,27.325600,15.879600,53510,3.332000,12.553800,2344,53183,7593,14.277100,99.272000
+Multiple sellers,1065,1063,1063,13,1050,98.777000,1.223000,0.716100,2.081100,99.812200,8.189100,17.351800,9.577800,1042,2.345100,7.319400,1,1050,499,47.523800,98.777000
+Same state,29709,29064,29060,1176,27884,95.953200,4.046800,3.826200,4.279500,97.815500,6.941900,14.916000,8.296000,29041,3.214800,5.084000,392,28879,2940,10.180400,99.377200
+Unknown origin,660,0,0,0,0,,,,,0.000000,,,,0,,,0,0,0,,

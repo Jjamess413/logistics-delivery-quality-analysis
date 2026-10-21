@@ -1,0 +1,101 @@
+case_code,purchase_date,customer_state,category,review_priority,late_days,review_score,processing_seconds,post_handover_seconds
+ORD-012775,2018-06-27,SP,books_general_interest,Data quality review,,5,,
+ORD-017372,2017-11-28,SP,auto,Data quality review,,5,,
+ORD-017549,2017-05-25,RS,sports_leisure,Data quality review,,5,,
+ORD-066407,2018-06-08,SP,computers_accessories,Data quality review,,1,,
+ORD-095491,2018-06-20,SP,industry_commerce_and_business,Data quality review,,5,,
+ORD-010586,2018-02-23,RJ,cool_stuff,Severe delay + poor feedback,188,2,273092,17728500
+ORD-027870,2018-01-03,SP,home_construction,Severe delay + poor feedback,175,1,2909067,13633383
+ORD-018518,2017-03-13,SP,furniture_decor,Severe delay + poor feedback,167,1,299203,16104974
+ORD-015575,2017-03-08,SE,musical_instruments,Severe delay + poor feedback,166,1,36340,16780004
+ORD-026388,2017-03-07,PA,consoles_games,Severe delay + poor feedback,165,1,651617,16251162
+ORD-016799,2017-02-28,GO,housewares,Severe delay + poor feedback,152,1,184028,15459601
+ORD-042875,2017-11-25,RJ,garden_tools,Severe delay + poor feedback,143,1,235167,14021699
+ORD-086945,2017-04-04,CE,computers_accessories,Severe delay + poor feedback,132,1,103078,14427839
+ORD-001191,2017-04-06,PE,telephony,Severe delay + poor feedback,123,1,85418,14269228
+ORD-030836,2017-04-28,GO,Unknown category,Severe delay + poor feedback,112,2,941925,11490450
+ORD-009209,2017-11-25,CE,furniture_decor,Severe delay + poor feedback,110,1,281111,12028022
+ORD-069448,2017-09-26,RJ,furniture_decor,Severe delay + poor feedback,109,1,251251,11163757
+ORD-015797,2017-05-03,AM,food,Severe delay + poor feedback,104,1,51236,11947805
+ORD-075625,2018-01-12,RJ,baby,Severe delay + poor feedback,104,1,259701,11077770
+ORD-090193,2017-05-25,MG,garden_tools,Severe delay + poor feedback,104,1,450094,9671829
+ORD-046243,2018-01-24,BA,garden_tools,Severe delay + poor feedback,96,1,178593,10708482
+ORD-016120,2017-12-16,MG,auto,Severe delay + poor feedback,94,2,2620040,8891995
+ORD-053990,2017-11-14,SP,furniture_decor,Severe delay + poor feedback,91,1,9012168,88673
+ORD-090113,2017-10-22,RJ,telephony,Severe delay + poor feedback,88,1,873634,8615619
+ORD-042799,2017-11-21,SP,furniture_living_room,Severe delay + poor feedback,85,1,285384,8902958
+ORD-023124,2018-04-15,BA,auto,Severe delay + poor feedback,79,1,200323,9162156
+ORD-096413,2018-01-08,SP,perfumery,Severe delay + poor feedback,77,1,67169,8634909
+ORD-088224,2018-03-06,SP,signaling_and_security,Severe delay + poor feedback,76,1,679920,8284762
+ORD-000311,2018-03-15,RJ,health_beauty,Severe delay + poor feedback,74,1,126024,8195410
+ORD-063771,2018-01-17,CE,stationery,Severe delay + poor feedback,73,1,610845,8924079
+ORD-081648,2017-11-17,PR,auto,Severe delay + poor feedback,73,1,436794,7984485
+ORD-028213,2018-01-15,RJ,food,Severe delay + poor feedback,72,1,3015020,5124481
+ORD-046531,2018-02-22,RJ,construction_tools_construction,Severe delay + poor feedback,70,1,104013,8317408
+ORD-053067,2018-02-26,RJ,sports_leisure,Severe delay + poor feedback,68,1,592035,6839398
+ORD-044896,2018-02-15,SP,health_beauty,Severe delay + poor feedback,66,1,114447,6889803
+ORD-077114,2018-02-25,RJ,electronics,Severe delay + poor feedback,66,1,161836,7151951
+ORD-068004,2017-05-31,SP,fashion_bags_accessories,Severe delay + poor feedback,65,1,198500,6581192
+ORD-082387,2017-01-29,SP,sports_leisure,Severe delay + poor feedback,65,1,182030,8717222
+ORD-037365,2017-05-02,GO,sports_leisure,Severe delay + poor feedback,63,1,180893,10618917
+ORD-094621,2017-11-06,SP,bed_bath_table,Severe delay + poor feedback,63,1,89252,6888173
+ORD-020923,2018-01-31,PA,sports_leisure,Severe delay + poor feedback,60,1,166197,9044297
+ORD-078649,2017-11-24,SP,bed_bath_table,Severe delay + poor feedback,60,1,3566168,3707083
+ORD-076957,2018-02-22,ES,computers_accessories,Severe delay + poor feedback,57,1,630345,6104781
+ORD-080091,2018-05-02,RJ,health_beauty,Severe delay + poor feedback,57,1,74708,7283433
+ORD-061174,2018-02-09,RJ,auto,Severe delay + poor feedback,56,1,555432,6681115
+ORD-070487,2018-01-24,RJ,food,Severe delay + poor feedback,56,1,51933,7279362
+ORD-049084,2018-02-17,RJ,computers_accessories,Severe delay + poor feedback,55,1,862199,6648278
+ORD-040560,2018-01-10,CE,computers_accessories,Severe delay + poor feedback,54,1,1738438,5432899
+ORD-051860,2018-02-26,RJ,stationery,Severe delay + poor feedback,53,1,169860,5952716
+ORD-096873,2018-03-04,RJ,baby,Severe delay + poor feedback,53,1,338054,6135004
+ORD-003833,2018-04-03,CE,health_beauty,Severe delay + poor feedback,52,1,108290,6716223
+ORD-051658,2018-01-25,CE,furniture_decor,Severe delay + poor feedback,52,2,453746,7451596
+ORD-051228,2018-03-03,RJ,electronics,Severe delay + poor feedback,51,1,209815,6191196
+ORD-067754,2017-09-04,SP,garden_tools,Severe delay + poor feedback,51,1,361528,6127441
+ORD-085193,2017-12-20,PE,sports_leisure,Severe delay + poor feedback,51,1,543576,6728747
+ORD-090037,2018-01-16,SP,bed_bath_table,Severe delay + poor feedback,51,1,211970,5549995
+ORD-097858,2017-01-12,CE,fashion_bags_accessories,Severe delay + poor feedback,51,1,360538,8616339
+ORD-016159,2018-02-26,RJ,watches_gifts,Severe delay + poor feedback,50,1,119537,6205511
+ORD-053596,2017-03-19,SP,food,Severe delay + poor feedback,50,1,170137,5693252
+ORD-096851,2017-12-06,PE,toys,Severe delay + poor feedback,50,1,202480,7234590
+ORD-014267,2018-02-27,RJ,drinks,Severe delay + poor feedback,49,1,169452,5835087
+ORD-022578,2018-02-05,CE,computers_accessories,Severe delay + poor feedback,49,1,81347,6818839
+ORD-034998,2018-02-14,SP,bed_bath_table,Severe delay + poor feedback,49,1,240868,5697516
+ORD-048305,2017-11-29,RS,sports_leisure,Severe delay + poor feedback,49,1,115760,6652988
+ORD-059696,2017-10-13,BA,office_furniture,Severe delay + poor feedback,49,1,1042804,6151228
+ORD-094448,2018-02-01,RJ,auto,Severe delay + poor feedback,49,1,59820,6967500
+ORD-098067,2018-04-12,RN,perfumery,Severe delay + poor feedback,49,1,547833,6207126
+ORD-033681,2018-02-20,RJ,sports_leisure,Severe delay + poor feedback,48,1,547896,5930375
+ORD-074126,2018-02-09,CE,telephony,Severe delay + poor feedback,48,1,830611,5647384
+ORD-076765,2018-01-17,RJ,toys,Severe delay + poor feedback,48,1,212735,5865614
+ORD-087550,2018-04-08,RJ,bed_bath_table,Severe delay + poor feedback,48,1,348097,6578529
+ORD-055477,2018-01-22,RJ,cool_stuff,Severe delay + poor feedback,47,1,66891,5993277
+ORD-058750,2018-02-26,RJ,food,Severe delay + poor feedback,47,2,112423,5956955
+ORD-078851,2018-01-19,CE,stationery,Severe delay + poor feedback,47,1,78788,6460258
+ORD-086979,2018-03-24,RJ,christmas_supplies,Severe delay + poor feedback,47,1,1977055,5647030
+ORD-094334,2017-10-22,RJ,sports_leisure,Severe delay + poor feedback,47,1,126863,5614492
+ORD-013798,2017-07-17,SP,perfumery,Severe delay + poor feedback,46,1,152301,5412452
+ORD-039192,2017-03-06,BA,home_confort,Severe delay + poor feedback,46,1,128836,5972751
+ORD-050812,2018-01-03,RJ,bed_bath_table,Severe delay + poor feedback,46,1,203454,6377373
+ORD-093489,2018-02-21,RJ,furniture_decor,Severe delay + poor feedback,46,1,88539,5930986
+ORD-001402,2018-02-22,BA,furniture_decor,Severe delay + poor feedback,45,1,106393,5975691
+ORD-005125,2018-01-25,RJ,electronics,Severe delay + poor feedback,45,1,80692,5976576
+ORD-053904,2018-03-31,PI,auto,Severe delay + poor feedback,45,1,196030,5780136
+ORD-094548,2018-03-02,RJ,health_beauty,Severe delay + poor feedback,45,1,340848,5666770
+ORD-092337,2017-03-24,RJ,housewares,Severe delay + poor feedback,44,1,9505,6065099
+ORD-026862,2018-06-21,BA,cool_stuff,Severe delay + poor feedback,43,1,942605,5626130
+ORD-033628,2018-02-25,RJ,sports_leisure,Severe delay + poor feedback,43,1,356067,5394575
+ORD-038067,2018-02-08,RJ,furniture_decor,Severe delay + poor feedback,43,1,38138,6560947
+ORD-045575,2018-02-09,RJ,housewares,Severe delay + poor feedback,43,1,435416,5597822
+ORD-052028,2017-11-16,SP,computers_accessories,Severe delay + poor feedback,43,1,5707033,357978
+ORD-069595,2018-02-06,RJ,auto,Severe delay + poor feedback,43,1,114671,6142213
+ORD-082030,2018-03-11,PI,furniture_decor,Severe delay + poor feedback,43,1,293053,5355339
+ORD-084180,2018-01-22,SP,Unknown category,Severe delay + poor feedback,43,1,717195,5004049
+ORD-019930,2017-12-10,RJ,electronics,Severe delay + poor feedback,42,1,179539,5628219
+ORD-028318,2017-11-24,MG,bed_bath_table,Severe delay + poor feedback,42,1,3577766,2322697
+ORD-038786,2018-02-11,RJ,home_appliances_2,Severe delay + poor feedback,42,2,272954,5621369
+ORD-051775,2017-03-06,CE,Unknown category,Severe delay + poor feedback,42,1,340293,6399480
+ORD-071254,2017-07-18,MG,bed_bath_table,Severe delay + poor feedback,42,1,523790,5000236
+ORD-000758,2018-04-30,CE,health_beauty,Severe delay + poor feedback,41,1,245172,5379705
+ORD-003259,2018-02-25,RJ,health_beauty,Severe delay + poor feedback,41,1,169399,5552113

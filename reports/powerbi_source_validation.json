@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "json_documents": 54,
+  "field_references": 49,
+  "pages": 3,
+  "visuals": 44,
+  "tables": 4,
+  "measures": 24,
+  "csv_checks": {
+    "FactDelivery": {
+      "rows": 86288,
+      "columns_present": true
+    },
+    "DimDate": {
+      "rows": 546,
+      "columns_present": true
+    },
+    "DimState": {
+      "rows": 27,
+      "columns_present": true
+    },
+    "DimCategory": {
+      "rows": 73,
+      "columns_present": true
+    }
+  },
+  "errors": [],
+  "scope": "Public source format, model bindings and inputs; not Desktop rendering or DAX execution",
+  "desktop_status": "Pending owner Windows refresh and screenshots"
+}

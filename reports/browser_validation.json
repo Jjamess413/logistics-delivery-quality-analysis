@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "baseline_order_denominator_rate_and_p90": true,
+    "ineligible_orders_remain_in_coverage": true,
+    "month_and_state_filters_match_independent_sql": true,
+    "category_combines_with_month_state": true,
+    "reset_restores_full_cohort": true,
+    "empty_selection_has_no_fabricated_zero_rate": true,
+    "state_csv_preserves_denominator_and_selection": true,
+    "single_seller_lane_matches_sql": true,
+    "low_score_association_denominators_reconcile": true,
+    "minimum_sample_threshold_applies": true,
+    "review_queue_and_pagination_reconcile": true,
+    "data_defects_kept_separate_from_late_deliveries": true,
+    "case_search_timeline_and_keyboard_close": true,
+    "filtered_case_export_keeps_historical_scope": true,
+    "empty_case_search_state": true,
+    "definitions_license_and_native_status_visible": true,
+    "mobile_width_has_no_body_overflow": true,
+    "no_javascript_errors": true,
+    "no_external_runtime_requests": true
+  },
+  "checks_count": 19,
+  "environment": "Headless Chromium",
+  "artifact": "Standalone browser dashboard",
+  "native_desktop_execution": "Not performed by this test"
+}

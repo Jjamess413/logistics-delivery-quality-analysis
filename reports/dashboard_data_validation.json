@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "orders_match_summary": true,
+    "eligible_count_matches": true,
+    "late_count_matches": true,
+    "no_customer_identifiers_or_review_text": true,
+    "one_row_per_case": true,
+    "no_external_scripts": true
+  },
+  "embedded_order_rows": 86288,
+  "html_bytes": 6554005,
+  "html_sha256": "95e6b22c2fda7cd6eb66e635cd1f84c5b054c0665f2a1bdd7310cf6eefafeb34",
+  "grain": "One anonymised order; no source order/customer/seller/review identifiers or free text"
+}

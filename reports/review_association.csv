@@ -1,0 +1,5 @@
+late_band,orders,delivered_orders,eligible_orders,late_orders,on_time_orders,on_time_pct,late_pct,late_rate_wilson_low_pct,late_rate_wilson_high_pct,eligibility_pct,median_delivery_days,p90_delivery_days,mean_delivery_days,stage_valid_orders,mean_processing_days,mean_post_handover_days,severe_late_orders,reviewed_eligible_orders,poor_review_orders,poor_review_pct,review_coverage_pct
+1-7 days late,3193,3193,3193,3193,0,0.000000,100.000000,99.879800,100.000000,100.000000,27.114400,36.327800,27.439200,3191,5.426900,22.002100,0,3134,1593,50.829600,98.152200
+Not eligible,2592,5,0,0,0,,,,,0.000000,,,,0,,,0,0,0,,
+On time,77766,77766,77766,0,77766,100.000000,0.000000,0.000000,0.004900,100.000000,10.239800,20.153700,11.456100,77665,3.073100,8.388000,0,77319,7315,9.460800,99.425200
+Over 7 days late,2737,2737,2737,2737,0,0.000000,100.000000,99.859800,100.000000,100.000000,40.971000,61.094500,45.111800,2737,6.615700,38.496100,2737,2659,2124,79.879700,97.150200

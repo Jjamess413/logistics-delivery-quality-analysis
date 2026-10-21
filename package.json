@@ -1,0 +1,10 @@
+{
+  "name": "logistics-delivery-quality-analysis",
+  "private": true,
+  "scripts": {
+    "test:browser": "node scripts/verify_dashboard.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
